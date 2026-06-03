@@ -12,7 +12,7 @@ if (window.innerWidth <= 768) {
 }
 </script>
 <title>SQL Injection Reference Guide</title>
-   <div class="logo">
+   <!--<div class="logo">
     ▄︻デ ᔕᗷ ᔕᕼᗩᒎᎥᗷ ══━一
 </div>
 
@@ -48,6 +48,70 @@ body{
         0 0 20px #00ff00,
         0 0 40px #00ff00,
         0 0 80px #00ff00;
+    }
+}
+</style>  -->
+    <div class="logo-container">
+    <div class="logo">
+        ▄︻デ ᔕᗷ ᔕᕼᗩᒎᎥᗷ ══━一
+    </div>
+</div>
+
+<style>
+body{
+    background:#000;
+    margin:0;
+}
+
+.logo-container{
+    position:relative;
+    width:100%;
+    height:70px;
+    overflow:hidden;
+}
+
+.logo{
+    position:absolute;
+    top:13px;
+    left:0;
+
+    font-size:25px;
+    font-weight:bold;
+    color:#00ff00;
+    font-family:Consolas, monospace;
+
+    text-shadow:
+        0 0 5px #00ff00,
+        0 0 10px #00ff00,
+        0 0 20px #00ff00,
+        0 0 40px #00ff00,
+        0 0 80px #00ff00;
+
+    animation:
+        glow 2s infinite alternate,
+        moveLogo 8s linear infinite alternate;
+}
+
+@keyframes glow{
+    from{
+        text-shadow:
+        0 0 10px #00ff00,
+        0 0 20px #00ff00;
+    }
+    to{
+        text-shadow:
+        0 0 20px #00ff00,
+        0 0 40px #00ff00,
+        0 0 80px #00ff00;
+    }
+}
+
+@keyframes moveLogo{
+    from{
+        left:0;
+    }
+    to{
+        left:calc(100% - 320px);
     }
 }
 </style>
