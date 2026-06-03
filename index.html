@@ -12,7 +12,7 @@ if (window.innerWidth <= 768) {
 }
 </script>
 <title>SQL Injection Reference Guide</title>
-    <div class="logo">
+   <!-- <div class="logo">
     ▄︻デ ᔕᗷ ᔕᕼᗩᒎᎥᗷ ══━一
 </div>
 
@@ -48,6 +48,55 @@ body{
         0 0 20px #00ff00,
         0 0 40px #00ff00,
         0 0 80px #00ff00;
+    }
+}
+</style> -->
+    <div class="logo-box">
+    <span class="logo-text">SB SHAJIB</span>
+    <div class="scan"></div>
+</div>
+
+<style>
+.logo-box{
+    position:relative;
+    width:fit-content;
+    margin:20px auto;
+    padding:10px 30px;
+    overflow:hidden;
+}
+
+.logo-text{
+    position:relative;
+    z-index:2;
+    font-size:32px;
+    font-weight:bold;
+    color:#00ff00;
+    font-family:Consolas, monospace;
+    text-shadow:0 0 10px #00ff00;
+}
+
+.scan{
+    position:absolute;
+    top:0;
+    left:-150px;
+    width:150px;
+    height:100%;
+    background:linear-gradient(
+        90deg,
+        transparent,
+        rgba(0,255,0,0.8),
+        transparent
+    );
+    animation:scanMove 2s linear infinite;
+    z-index:1;
+}
+
+@keyframes scanMove{
+    from{
+        left:-150px;
+    }
+    to{
+        left:100%;
     }
 }
 </style>
